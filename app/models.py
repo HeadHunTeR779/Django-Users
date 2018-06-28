@@ -10,7 +10,8 @@ class UserProfileInfo(models.Model):
 
     #My add-on fields
     portfolio_site = models.URLField(blank=True) #Not necessarily needed by user to fill it out
-    profile_pic = models.ImageField(upload_to="profile_pics", blank=True) #now we gotta make a folder profile_pics under media
+    profile_pic = models.ImageField(upload_to="profile_pics", blank=True)
+    #now we gotta make a folder profile_pics under media
     #install pillow in venv for python images
 
 
