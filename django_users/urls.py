@@ -21,5 +21,6 @@ from app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index, name="index"),
-    url(r'^app/',include('app.urls')),    
-]
+    url(r'^app/',include('app.urls')),
+    url(r'^logout/$', views.user_logout, name="logout"),
+    ]
